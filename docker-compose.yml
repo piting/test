@@ -6,4 +6,5 @@ services:
     container_name: ubuntu
     stdin_open: true
     tty: true
-
+    volumes:
+      - .:/var/www
