@@ -1,0 +1,9 @@
+version: "3.0"
+
+services:
+  ubuntu:
+    build: .
+    container_name: ubuntu
+    stdin_open: true
+    tty: true
+
