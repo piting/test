@@ -1,5 +1,5 @@
-FROM ubuntu:16.04
+FROM nginx:1.13-alpine
 
-RUN apt-get update -y && apt-get install git-core -y
-
-CMD ["/bin/bash"]
+RUN apk update && apk upgrade && \ 
+apk add --no-cache git && \ 
+apk add --no-cache openssh

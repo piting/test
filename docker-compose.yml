@@ -3,7 +3,7 @@ version: "3.0"
 services:
   ubuntu:
     build: .
-    container_name: ubuntu
+    container_name: nginx
     stdin_open: true
     tty: true
     volumes:
